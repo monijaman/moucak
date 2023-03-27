@@ -39,4 +39,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 
 
-https://medium.com/@ranjandsingh/how-to-deploy-nextjs-app-on-a-custom-vps-56269748870f
+https://medium.com/@ranjandsingh/how-to-deploy-nextjs-app-on-a-custom-vps-56269748870f 
