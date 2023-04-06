@@ -2,6 +2,31 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import { IProduct } from "types/index";
+import HorizontalCard from "components/HomeCard/horizontal-card";
+// import VerticalCard from "components/HomeCard/vertical-card";
+// import Products from "components/HomeProducts";
+// import Button from "components/FilterButton";
+// import Pagination from "@material-ui/lab/Pagination";
+// import { useState, useRef, useEffect } from "react";
+// import { useRouter } from "next/router";
+
+// import {
+//   CircularProgress,
+//   makeStyles,
+//   Typography
+// } from "@material-ui/core";
+
+import Layout from "components/Layout/";
+import { InferGetServerSidePropsType } from "next";
+import { useDispatch, useSelector } from "react-redux";
+
+import axios from "axios";
+const queryString = require('querystring');
+import { getProducts, updatFilter, selectFilterState } from "redux/filterSlice";
+// import Product from "models/Product";
+
+
 
 const inter = Inter({ subsets: ['latin'] })
 
